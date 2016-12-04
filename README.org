@@ -1,0 +1,4 @@
+* test-switcher.el
+- Entirely ripped off of [[https://github.com/bbatsov/projectile][Projectile by bbatsov]]
+- Slightly better than the test file management in Projectile :)
+  - Or perhaps just more suited to my personal needs
