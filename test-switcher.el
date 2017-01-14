@@ -53,7 +53,7 @@
     (cond
      ((null candidates) nil)
      ((= (length candidates) 1) (car candidates))
-     (t (let ((grouped-candidates (test-swticher-group-file-candidates file candidates)))
+     (t (let ((grouped-candidates (test-switcher-group-file-candidates file candidates)))
           (if (= (length (car grouped-candidates)) 2)
               (car (last (car grouped-candidates)))
             (helm :sources
@@ -75,3 +75,5 @@
   (interactive)
   (find-file
    (test-switcher-find-implementation-or-test (buffer-file-name))))
+
+(provide 'test-switcher)
